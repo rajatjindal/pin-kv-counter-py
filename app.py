@@ -17,7 +17,7 @@ class IncomingHandler(IncomingHandler):
         if raw is not None:
             counter: Counter = asCounter(json.loads(store.get("counter")))
         else:
-            counter = Counter(1)
+            counter = Counter(0)
         
         counter.count += 1
         
